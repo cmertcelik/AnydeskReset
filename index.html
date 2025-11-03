@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AnyDesk Reset - İndir</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="AnyDesk kimliğini sıfırlayan exe'yi indir." />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1120;
+      --accent1: linear-gradient(135deg,#7c3aed 0%,#06b6d4 100%);
+      --glass: rgba(255,255,255,0.03);
+      --muted: #9ca3af;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background: radial-gradient(900px 600px at 10% 10%, rgba(124,58,237,0.12), transparent),
+                  radial-gradient(600px 500px at 90% 90%, rgba(6,182,212,0.08), transparent),
+                  var(--bg);
+      color:#e6eef8;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+    .card{
+      width:100%;
+      max-width:760px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:16px;
+      padding:28px;
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+      border:1px solid rgba(255,255,255,0.03);
+      backdrop-filter: blur(6px) saturate(1.1);
+    }
+    /* Ortalanmış başlık, açıklama ve butonlar */
+    header{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      gap:16px;
+    }
+    .logo{
+      width:56px;height:56px;border-radius:12px;
+      background:var(--accent1);
+      display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:white;
+      box-shadow: 0 8px 30px rgba(12,15,30,0.5);
+    }
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 18px;color:var(--muted)}
+    .controls{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      justify-content:center;
+      margin-top:18px;
+    }
+    .btn{
+      appearance:none;border:0;padding:12px 18px;border-radius:10px;font-weight:600;cursor:pointer;
+      background:linear-gradient(90deg,#7c3aed,#06b6d4);color:white;box-shadow:0 8px 20px rgba(6,11,30,0.6);
+    }
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);font-weight:600}
+    small.note{display:block;margin-top:14px;color:var(--muted)}
+    .meta{
+      margin-top:20px;padding:14px;border-radius:10px;background:var(--glass);color:var(--muted);font-size:13px;border:1px solid rgba(255,255,255,0.02)
+    }
+    footer{margin-top:18px;font-size:13px;color:var(--muted);text-align:center}
+    @media (max-width:520px){.card{padding:18px}.logo{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <header>
+      <div>
+        <h1>AnyDesk Adres Sıfırlama Aracı</h1>
+        <p class="lead">Bu araç AnyDesk uygulamasını durdurup konfigürasyon dosyasını silerek yeni bir AnyDesk kimliği ile başlamanızı sağlar.</p>
+      </div>
+    </header>
+
+    <section aria-labelledby="download-heading">
+      <div class="controls">
+        <a id="downloadLink" class="btn" href="/downloads/AnyDeskReset.exe" download>AnyDesk Adres Sıfırlama Aracını İndir</a>
+      </div>
+    </section>
+
+    <footer>
+      <small>Hazırlayan: Mert Çelik</small>
+    </footer>
+  </main>
+
+  
+</body>
+</html>
